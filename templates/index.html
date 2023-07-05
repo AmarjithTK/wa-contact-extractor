@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3f2fd;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      color: #1565c0;
+      margin: 20px 0;
+    }
+    
+    ol {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      list-style-type: decimal;
+    }
+    
+    li {
+      font-size: 24px;
+      line-height: 1.5;
+      color: #37474f;
+    }
+    
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+      
+      li {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Ordered List Example</h1>
+  
+    <ol>
+        {% for item in items %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</body>
+</html>
+

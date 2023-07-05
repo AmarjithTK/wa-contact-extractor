@@ -1,0 +1,64 @@
+{
+  "account" : {
+    "userId" : 12460274547886992,
+    "installations" : [ {
+      "applicationName" : "Truecaller",
+      "installation" : {
+        "createdAt" : 1687594158265,
+        "ip" : "117.194.184.161",
+        "ipCountry" : "IN",
+        "language" : "en",
+        "appDetails" : {
+          "version" : "13.22.9",
+          "store" : "GOOGLE_PLAY"
+        },
+        "deviceDetails" : {
+          "deviceId" : "fb1ce44a85a315ba",
+          "os" : "android",
+          "model" : "Pixel",
+          "simSerials" : [ "", "" ],
+          "manufacturer" : "Google",
+          "language" : "en"
+        },
+        "simDetails" : [ {
+          "operator" : "BSNL MOBILE",
+          "active" : true
+        }, {
+          "operator" : "JIO 4G — JIO",
+          "active" : true
+        } ]
+      }
+    } ],
+    "activationDetails" : [ {
+      "number" : 916282299760,
+      "lastActivation" : 1687594158265,
+      "priority" : 1
+    } ]
+  },
+  "profile" : {
+    "userId" : 12460274547886992,
+    "firstName" : "Starlighter",
+    "lastName" : "Spaceforce",
+    "personalData" : {
+      "phoneNumbers" : [ {
+        "number" : 916282299760,
+        "countryCode" : "IN"
+      } ],
+      "gender" : "Prefer not to say",
+      "onlineIds" : {
+        "email" : "sonunigam4097@gmail.com"
+      },
+      "isAmbassador" : false,
+      "isTrueName" : true,
+      "privacy" : "Private"
+    },
+    "verifiedEmail" : false
+  },
+  "spammer" : false,
+  "contactRequest" : {
+    "sentCount" : 0,
+    "acceptedCount" : 0,
+    "blockedCount" : 0,
+    "blockedAll" : false
+  }
+}
