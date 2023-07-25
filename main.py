@@ -57,8 +57,3 @@ def processed():
     # Pass the processed data to the template
     return render_template('processed.html', items=phone_numbers,heading=output_file)
 
-
-
-
-if __name__ == '__main__':
-    app.run()
