@@ -2,6 +2,9 @@ import csv
 import re
 from flask import Flask, render_template_string,render_template
 
+
+heading=input("Enter a heading for your html")
+
 app = Flask(__name__)
 
 # Read the CSV file and extract phone numbers
@@ -50,13 +53,15 @@ with open('numbers.csv', 'r') as file:
 # html_list += '</ol>'
 
 # Render the HTML list using a Flask template
-@app.route('/')
-def index():
-    return render_template_string(html_list)
+# app.route('/')
+# def index():
+#     return render_template_string(html_list)@
+
+# print(numbers)
 
 @app.route('/')
 def index():
-    return render_template_string(html_list)
+    return render_template('index.html',items=numbers,heading=heading)
 
 if __name__ == '__main__':
     app.run(debug=True)
