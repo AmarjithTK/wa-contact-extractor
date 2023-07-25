@@ -16,7 +16,7 @@ workdir =  os.getcwd()
 
 
 try:
-    os.makedirs('dirname', exist_ok=True)
+    os.makedirs('blobs', exist_ok=True)
 except Exception:
     pass
 
