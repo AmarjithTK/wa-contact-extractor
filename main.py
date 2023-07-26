@@ -8,7 +8,6 @@ from lib.extractor import extract
 app = Flask(__name__)
 
 
-
 workdir =  os.getcwd()
 # make templates folder and 
 

@@ -65,6 +65,19 @@
   </style>
 </head>
 <body>
+  <button onclick="downloadPage()">Download</button>
+  <script>
+  function downloadPage() {
+    const page = document.documentElement.outerHTML;
+    const blob = new Blob([page], {type: 'text/html'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'page.html';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+  </script>
   <div class="container">
     <h1>{{heading}}</h1>
   
