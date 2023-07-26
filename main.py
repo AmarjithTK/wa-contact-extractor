@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request,redirect,url_for
 import re,os
+from flaskwebgui import FlaskUI
 
 
 from lib.extractor import extract
 
 
 app = Flask(__name__)
+ui = FlaskUI(app=app,server="flask",width=1280,height=720) 
 
 
 workdir =  os.getcwd()
@@ -60,4 +62,6 @@ def processed():
 
 
 if __name__ == '__main__':
-    app.run()
+    # app.run()
+    ui.run()
+

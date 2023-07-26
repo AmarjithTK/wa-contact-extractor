@@ -63,6 +63,8 @@
       }
     }
   </style>
+    <script src="flaskgui.js"></script>
+
 </head>
 <body>
   <button onclick="downloadPage()">Download</button>
@@ -73,7 +75,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'page.html';
+    a.download = 'renamethis.html';
     a.click();
     URL.revokeObjectURL(url);
   }
