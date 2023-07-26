@@ -10,12 +10,12 @@ extract the zip and navigate to the extracted directory
 Open terminal or command prompt as privilaged user ( means administrator )
 
 
-`pip3 install -r requirements.txt` 
+`pip install -r requirements.txt` 
 
 
 then run 
 
- `python3 main.py` 
+ `python main.py` 
 
  
 
